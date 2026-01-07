@@ -4,7 +4,10 @@ body {
   font-family: 'Noto Serif JP', serif;
   background: url('https://copilot.microsoft.com/th/id/BCO.d4900765-8cc7-4fa2-8dd8-04f2c435e81b.png') no-repeat center center fixed;
   background-size: cover;
-  color: #2e2e2e;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
   text-align: center;
 }
 
