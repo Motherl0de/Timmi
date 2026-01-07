@@ -8,7 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
     message.textContent = "Ты сделал первый шаг в мир грёз и путешествий ✨";
     document.body.appendChild(message);
   });
-
+// Добавим анимацию лепестков сакуры
+  const petalsContainer = document.createElement("div"); 
+  petalsContainer.classList.add("petals");
+  document.body.appendChild(petalsContainer); 
+  for (let i = 0; i < 15; i++) {
+    const petal = document.createElement("div");
+    petal.classList.add("petal");
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = 5 + Math.random() * 5 + "s"; 
+    petalsContainer.appendChild(petal); 
+  }
   // Добавим декоративный элемент — символику кои
   const koi = document.createElement("div");
   koi.textContent = "🐟";
