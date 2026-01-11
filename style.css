@@ -18,6 +18,51 @@ h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  color: #b44c43;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
 
 p {
   font-size: 1.2em;
